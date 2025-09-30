@@ -220,57 +220,41 @@
     </footer>
 
 <script>
-    function saveInputToJsonFile(name, phone, email) {
-        // Create a JavaScript object
-        const userData = {
-            name: name,
-            phone: phone,
-            email: email
-        };
+    document.getElementById('saveButton').addEventListener('click', async function() {
+    const firstName = document.getElementById('fname').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    
+    const userData = { firstName, phone, email };
+    const jsonData = JSON.stringify(userData, null, 2);
 
-        // Convert to JSON string
-        const jsonData = JSON.stringify(userData, null, 2);
-
-        // Create a Blob with the JSON data
-        const blob = new Blob([jsonData], {
-            type: 'application/json'
+    try {
+        // This will ask the user to select a file to save
+        const handle = await window.showSaveFilePicker({
+            suggestedName: 'userinfo.json',
+            types: [{
+                description: 'JSON Files',
+                accept: {'application/json': ['.json']},
+            }],
         });
-
-        // Create a temporary link element for downloading
-        const a = document.createElement('a');
-        a.href = URL.createObjectURL(blob);
-        a.download = 'userinfo.json'; // Set the desired filename
-
-        // Programmatically click the link to trigger download
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a); // Clean up the temporary link
         
-        // Revoke the object URL to free memory
-        URL.revokeObjectURL(a.href);
-    }
-
-    document.getElementById('saveButton').addEventListener('click', function() {
-        // Get form values
-        const firstName = document.getElementById('fname').value;
-        const phone = document.getElementById('phone').value;
-        const email = document.getElementById('email').value;
-        
-        // Call the function to save/download the JSON file
-        saveInputToJsonFile(firstName, phone, email);
+        const writable = await handle.createWritable();
+        await writable.write(jsonData);
+        await writable.close();
         
         // Show success message
         const successMessage = document.getElementById('successMessage');
         successMessage.textContent = "Saved!";
         successMessage.style.display = 'block';
-        console.log("Saved!");
-
-        // Hide success message after 3 seconds and clear content
+        
         setTimeout(function() {
             successMessage.style.display = 'none';
-            successMessage.textContent = ""; // Change back to blank
+            successMessage.textContent = "";
         }, 3000);
-    });
+    } catch (err) {
+        console.error('Error saving file:', err);
+    }
+});
 </script>
 </body>
 </html>
