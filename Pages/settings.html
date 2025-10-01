@@ -206,6 +206,7 @@
                         
                         <div class="button-container">
                             <button id="saveButton">Save Changes</button>
+                            <button id="test">Test</button>
                         </div>
                         
                         <div id="successMessage" class="message success-message"> </div>
@@ -219,58 +220,13 @@
         <p>Senior Design Lab 1 &copy; 2025</p>
     </footer>
 
+<script src="../Scripts/settings.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
-    function saveInputToJsonFile(name, phone, email) {
-        // Create a JavaScript object
-        const userData = {
-            name: name,
-            phone: phone,
-            email: email
-        };
-
-        // Convert to JSON string
-        const jsonData = JSON.stringify(userData, null, 2);
-
-        // Create a Blob with the JSON data
-        const blob = new Blob([jsonData], {
-            type: 'application/json'
-        });
-
-        // Create a temporary link element for downloading
-        const a = document.createElement('a');
-        a.href = URL.createObjectURL(blob);
-        a.download = 'userinfo.json'; // Set the desired filename
-
-        // Programmatically click the link to trigger download
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a); // Clean up the temporary link
-        
-        // Revoke the object URL to free memory
-        URL.revokeObjectURL(a.href);
-    }
-
-    document.getElementById('saveButton').addEventListener('click', function() {
-        // Get form values
-        const firstName = document.getElementById('fname').value;
-        const phone = document.getElementById('phone').value;
-        const email = document.getElementById('email').value;
-        
-        // Call the function to save/download the JSON file
-        saveInputToJsonFile(firstName, phone, email);
-        
-        // Show success message
-        const successMessage = document.getElementById('successMessage');
-        successMessage.textContent = "Saved!";
-        successMessage.style.display = 'block';
-        console.log("Saved!");
-
-        // Hide success message after 3 seconds and clear content
-        setTimeout(function() {
-            successMessage.style.display = 'none';
-            successMessage.textContent = ""; // Change back to blank
-        }, 3000);
-    });
+  // Initialize EmailJS with your public key
+  (function() {
+    emailjs.init("56zGufdKiLhdovH3I"); // Replace with your actual public key
+  })();
 </script>
 </body>
 </html>
