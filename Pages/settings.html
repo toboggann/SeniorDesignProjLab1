@@ -219,42 +219,6 @@
         <p>Senior Design Lab 1 &copy; 2025</p>
     </footer>
 
-<script>
-    document.getElementById('saveButton').addEventListener('click', async function() {
-    const firstName = document.getElementById('fname').value;
-    const phone = document.getElementById('phone').value;
-    const email = document.getElementById('email').value;
-    
-    const userData = { firstName, phone, email };
-    const jsonData = JSON.stringify(userData, null, 2);
-
-    try {
-        // This will ask the user to select a file to save
-        const handle = await window.showSaveFilePicker({
-            suggestedName: 'userinfo.json',
-            types: [{
-                description: 'JSON Files',
-                accept: {'application/json': ['.json']},
-            }],
-        });
-        
-        const writable = await handle.createWritable();
-        await writable.write(jsonData);
-        await writable.close();
-        
-        // Show success message
-        const successMessage = document.getElementById('successMessage');
-        successMessage.textContent = "Saved!";
-        successMessage.style.display = 'block';
-        
-        setTimeout(function() {
-            successMessage.style.display = 'none';
-            successMessage.textContent = "";
-        }, 3000);
-    } catch (err) {
-        console.error('Error saving file:', err);
-    }
-});
-</script>
+<script src ="../Scripts/settings.js"></script>
 </body>
 </html>
