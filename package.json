@@ -1,0 +1,12 @@
+{
+  "name": "user-settings",
+  "version": "1.0.0",
+  "description": "User settings form that saves to JSON",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
