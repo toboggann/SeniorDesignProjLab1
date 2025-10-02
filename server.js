@@ -1,5 +1,4 @@
 const express = require('express');
-const fs = require('fs');
 const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
@@ -11,25 +10,37 @@ app.use('/Scripts', express.static(path.join(__dirname, 'Scripts')));
 app.use('/Pages', express.static(path.join(__dirname, 'Pages')));
 app.use('/Images', express.static(path.join(__dirname, 'Images')));
 
+// In-memory storage for user data (replaces file writing)
+let userDataStorage = {};
+
 // API endpoint to save user data
 app.post('/save-user', (req, res) => {
-    const userData = req.body;
-    const filePath = path.join(__dirname, 'Scripts', 'userinfo.json');
-    
-    const dir = path.dirname(filePath);
-    if (!fs.existsSync(dir)) {
-        fs.mkdirSync(dir, { recursive: true });
+    try {
+        const userData = req.body;
+        
+        // Store data in memory instead of writing to file
+        userDataStorage = userData;
+        
+        console.log('User data saved to memory:', userData);
+        res.json({ 
+            message: 'Settings saved successfully',
+            note: 'Data is stored in server memory'
+        });
+    } catch (error) {
+        console.error('Error saving user data:', error);
+        res.status(500).json({ error: 'Failed to save settings' });
     }
-    
-    fs.writeFile(filePath, JSON.stringify(userData, null, 2), (err) => {
-        if (err) {
-            console.error('Error saving file:', err);
-            res.status(500).json({ error: 'Failed to save file' });
-        } else {
-            console.log('File saved successfully to', filePath);
-            res.json({ message: 'File saved successfully' });
-        }
-    });
+});
+
+// New endpoint to retrieve saved user data
+app.get('/get-user', (req, res) => {
+    try {
+        console.log('Retrieving user data:', userDataStorage);
+        res.json(userDataStorage);
+    } catch (error) {
+        console.error('Error retrieving user data:', error);
+        res.status(500).json({ error: 'Failed to retrieve settings' });
+    }
 });
 
 // Route handlers for your HTML pages
@@ -57,4 +68,5 @@ app.listen(port, () => {
     console.log(`   Settings: http://localhost:${port}/settings`);
     console.log(`   Graph 1: http://localhost:${port}/graph1`);
     console.log(`   Graph 2: http://localhost:${port}/graph2`);
+    console.log(`Using in-memory storage for user data`);
 });
