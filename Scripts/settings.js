@@ -133,6 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 5000);
         } else {
             alert('Error saving data. Please try again.');
+            console.log(err);
         }
     });
 });
