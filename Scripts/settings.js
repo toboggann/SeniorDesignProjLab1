@@ -9,10 +9,14 @@ async function saveInputToJsonFile(name, phone, email) {
             body: JSON.stringify(userData)
         });
 
+        const result = await response.json(); // Parse the JSON response
+        
         if (response.ok) {
+            console.log('Save successful:', result.message);
             return true;
         } else {
-            throw new Error('Server error');
+            console.error('Server error:', result.error);
+            return false;
         }
     } catch (error) {
         console.error('Error saving file:', error);
@@ -80,9 +84,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const success = await sendMail(firstName, phone, email);
         
         if (success) {
-            // Fixed the element ID - was 'tested!' which is probably wrong
             const successMessage = document.getElementById('successMessage'); 
-            successMessage.textContent = "Sent!";
+            successMessage.textContent = "I sent it!";
             successMessage.style.display = 'block';
             console.log("sent!");
 

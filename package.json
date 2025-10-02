@@ -4,11 +4,13 @@
   "description": "User settings form that saves to JSON",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
-    "emailjs": "^4.0.3",
     "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=18.x"
   }
 }
