@@ -15,7 +15,7 @@ async def main():
     devices = await BleakScanner.discover(timeout=5.0)
     for d in devices:
         print(d)
-    """
+    """#poop
     async with BleakClient(address) as client:
         connected = client.is_connected
         print(f"Connected: {connected}")

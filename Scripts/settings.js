@@ -13,6 +13,7 @@ async function saveInputToJsonFile(name, phone, email) {
         
         if (response.ok) {
             console.log('Save successful:', result.message);
+            console.log( name, phone, email)
             return true;
         } else {
             console.error('Server error:', result.error);
