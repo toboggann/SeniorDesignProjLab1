@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (success) {
             // Fixed the element ID - was 'tested!' which is probably wrong
             const successMessage = document.getElementById('successMessage'); 
-            successMessage.textContent = "Sent!";
+            successMessage.textContent = "I sent it!";
             successMessage.style.display = 'block';
             console.log("sent!");
 

@@ -4,14 +4,22 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Middleware
+// Middleware - Serve static files from ALL directories
 app.use(express.json());
-app.use(express.static(__dirname)); // Serve all static files from root
+app.use(express.static(__dirname));
+app.use('/Scripts', express.static(path.join(__dirname, 'Scripts')));
+app.use('/Pages', express.static(path.join(__dirname, 'Pages')));
+app.use('/Images', express.static(path.join(__dirname, 'Images')));
 
 // API endpoint to save user data
 app.post('/save-user', (req, res) => {
     const userData = req.body;
     const filePath = path.join(__dirname, 'Scripts', 'userinfo.json');
+    
+    const dir = path.dirname(filePath);
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+    }
     
     fs.writeFile(filePath, JSON.stringify(userData, null, 2), (err) => {
         if (err) {
@@ -44,5 +52,9 @@ app.get('/graph2', (req, res) => {
 // Start server
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
-    console.log(`Access your app at: http://localhost:${port}/`);
+    console.log(`Access your app at:`);
+    console.log(`   Home: http://localhost:${port}/`);
+    console.log(`   Settings: http://localhost:${port}/settings`);
+    console.log(`   Graph 1: http://localhost:${port}/graph1`);
+    console.log(`   Graph 2: http://localhost:${port}/graph2`);
 });
