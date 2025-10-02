@@ -4,10 +4,11 @@ from bleak import BleakScanner
 import struct
 
 # Replace with your ESP32's BLE MAC address (Windows shows it as "Device Address")
-address = "38:18:2B:8B:1D:6E"  
+address = "BC167CF6-D400-92B7-1D15-9F46DDB4C78A"  
 
 # Replace with the characteristic UUID from your ESP32 code
 CHAR_UUID = "daf2ff55-3641-42fe-a812-86b157ba9a28"
+#BC167CF6-D400-92B7-1D15-9F46DDB4C78A
 
 async def main():
     """
@@ -15,7 +16,7 @@ async def main():
     devices = await BleakScanner.discover(timeout=5.0)
     for d in devices:
         print(d)
-    """#poop
+    """
     async with BleakClient(address) as client:
         connected = client.is_connected
         print(f"Connected: {connected}")
@@ -28,7 +29,7 @@ async def main():
             # Convert bytes to float
             temperature = struct.unpack('f', value)[0]
             print("Received float temperature:", temperature)
-        
+    #"""    
 
 asyncio.run(main())
 
