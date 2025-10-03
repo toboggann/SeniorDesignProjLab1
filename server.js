@@ -65,7 +65,4 @@ app.listen(port, () => {
     console.log(`Server running on port ${port}`);
     console.log(`Access your app at:`);
     console.log(`   Home: http://localhost:${port}/`);
-    console.log(`   Settings: http://localhost:${port}/settings`);
-    console.log(`   Graph 1: http://localhost:${port}/graph1`);
-    console.log(`   Graph 2: http://localhost:${port}/graph2`);
 });
