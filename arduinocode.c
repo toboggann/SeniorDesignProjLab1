@@ -206,6 +206,3 @@ void loop() {
     oldDeviceConnected = deviceConnected;
   }
 }
-
-
-//hi
