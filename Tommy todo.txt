@@ -1,3 +1,5 @@
 - Make it so it saves through pages, you can come back and its saved
 - on/off button
 - f - c converter
+
+npx concurrently "python pythoncode.py" "node server.js"
