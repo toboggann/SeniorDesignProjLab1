@@ -35,7 +35,7 @@ app.post('/save-user', (req, res) => {
 // New endpoint to retrieve saved user data
 app.get('/get-user', (req, res) => {
     try {
-        console.log('Retrieving user data:', userDataStorage);
+        //console.log('Retrieving user data:', userDataStorage);
         res.json(userDataStorage);
     } catch (error) {
         console.error('Error retrieving user data:', error);

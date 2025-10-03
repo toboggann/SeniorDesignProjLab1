@@ -97,7 +97,7 @@ async def main():
             save_to_json(temperature1, './Scripts/temp1.json', 'sensor1')
             save_to_json(temperature2, './Scripts/temp2.json', 'sensor2')
             #print()  # Empty line for better readability
-            print("saved 1 and 2")
+            #print("saved 1 and 2")
 
 
 asyncio.run(main())
