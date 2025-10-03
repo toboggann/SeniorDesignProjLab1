@@ -136,36 +136,7 @@
             padding: 10px;
         }
         
-        .file-list {
-            background-color: white;
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-        }
-        
-        .file-list h3 {
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #f0f0f0;
-        }
-        
-        .file-list ul {
-            list-style-type: none;
-        }
-        
-        .file-list li {
-            padding: 0.7rem 1rem;
-            margin-bottom: 0.5rem;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .file-list li:before {
-            content: "📄";
-            margin-right: 10px;
-        }
+
         
         footer {
             background-color: #333;
@@ -213,7 +184,7 @@
         
         <main class="content">
             <div class="welcome-section">
-                <h2>Graph 2 - Temperature Monitoring</h2>
+                <h2>Graph 1 - Temperature Monitoring</h2>
                 <p>Real-time temperature data visualization</p>
             </div>
             
@@ -230,81 +201,7 @@
         <p>Senior Design Lab 1 &copy; 2025</p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('.nav-links a');
-            
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    navLinks.forEach(l => l.classList.remove('active'));
-                    this.classList.add('active');
-                });
-            });
-
-            // Chart.js initialization
-            console.log('Chart.js version:', Chart?.version);
-
-            const ctx = document.getElementById('myChart').getContext('2d');
-
-            const data = {
-                labels: [], // time in seconds
-                datasets: [{
-                    label: 'Temperature (°C)',
-                    data: [],
-                    borderColor: 'rgba(75,192,192,1)',
-                    backgroundColor: 'rgba(75,192,192,0.1)',
-                    pointRadius: 3,
-                    tension: 0.15,
-                    fill: false
-                }]
-            };
-
-            const config = {
-                type: 'line',
-                data: data,
-                options: {
-                    responsive: true,
-                    animation: false,
-                    scales: {
-                        x: {
-                            title: { display: true, text: 'Time (s)' }
-                        },
-                        y: {
-                            title: { display: true, text: 'Temperature (°C)' },
-                            min: 0,  
-                            max: 60,  
-                            ticks: {
-                                stepSize: 10
-                            }
-                        }
-                    }
-                }
-            };
-
-            const myChart = new Chart(ctx, config);
-
-            // Simulated real-time data
-            let t = 0;
-            setInterval(() => {
-                const rawValue = Math.sin(t/10) * 30 + 30 + (Math.random() - 0.5) * 4;
-
-                // Clamp to [0,60]
-                const value = Math.max(0, Math.min(60, rawValue));
-
-                data.labels.push(t);
-                data.datasets[0].data.push(value);
-
-                // Keep last 300 points
-                if (data.labels.length > 300) {
-                    data.labels.shift();
-                    data.datasets[0].data.shift();
-                }
-
-                myChart.update('none'); // update without animation
-                t++;
-            }, 1000);
-        });
-    </script>
+    <script src="../Scripts/graph1.js"></script>
 </body>
 </html> 
 

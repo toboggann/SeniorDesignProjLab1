@@ -68,5 +68,4 @@ app.listen(port, () => {
     console.log(`   Settings: http://localhost:${port}/settings`);
     console.log(`   Graph 1: http://localhost:${port}/graph1`);
     console.log(`   Graph 2: http://localhost:${port}/graph2`);
-    console.log(`Using in-memory storage for user data`);
 });
