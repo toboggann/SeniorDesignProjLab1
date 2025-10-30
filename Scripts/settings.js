@@ -90,6 +90,47 @@ async function sendUpdateEmail(name, phone, email) {
     }
 }
 
+// Function to read and display power state
+// Function to read and display power state
+async function togglePower() {
+    try {
+        // Always set power to 1, ignore current state
+        const powerData = { power: 1 , units1: "celsius", units2: "celsius"};
+        
+        console.log('Setting power to ON (1)');
+        
+        // Update the JSON file on the server
+        const updateResponse = await fetch('/update-power', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(powerData)
+        });
+        const userExists = await checkUserExists(email);
+        if( userExists){
+        if (updateResponse.ok) {
+            const result = await updateResponse.json();
+            console.log(`Power set to ON - ${result.message}`);
+            
+            // Update button text
+            const powerBtn = document.getElementById("power");
+
+            if (powerBtn) {
+                powerBtn.textContent = `Power: ON`;
+            }
+        } else {
+            const errorText = await updateResponse.text();
+            console.error('Failed to update power state:', updateResponse.status, errorText);
+        }
+    }   else{
+        alert('Please enter your information and save before setting power.');
+    }
+    
+        
+    } catch (error) {
+        console.error('Error setting power:', error);
+    }
+}
+
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Load existing user data when page loads
@@ -133,7 +174,12 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 5000);
         } else {
             alert('Error saving data. Please try again.');
-            console.log(err);
         }
     });
+
+    // Power button event listener
+    const powerBtn = document.getElementById("power");
+    if (powerBtn) {
+        powerBtn.addEventListener("click", togglePower);
+    }
 });

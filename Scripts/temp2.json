@@ -1,0 +1,1809 @@
+{
+  "sensor_id": "sensor2",
+  "sensor_name": "Temperature sensor2",
+  "readings": [
+    {
+      "timestamp": "2025-10-03T14:21:51.697932",
+      "temperature": 23.1875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:21:52.776218",
+      "temperature": 23.1875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:21:53.843080",
+      "temperature": 23.125,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:21:54.909597",
+      "temperature": 23.125,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:21:55.973605",
+      "temperature": 23.125,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:21:57.037629",
+      "temperature": 23.125,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:21:58.104680",
+      "temperature": 23.125,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:21:59.167803",
+      "temperature": 23.125,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:00.247438",
+      "temperature": 23.125,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:01.312345",
+      "temperature": 23.125,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:02.378493",
+      "temperature": 23.0625,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:03.444259",
+      "temperature": 23.0625,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:04.508165",
+      "temperature": 23.125,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:05.573019",
+      "temperature": 23.125,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:06.639187",
+      "temperature": 23.125,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:07.716308",
+      "temperature": 23.0625,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:08.785701",
+      "temperature": 23.0625,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:09.862741",
+      "temperature": 23.0625,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:10.928220",
+      "temperature": 23.0625,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:11.991335",
+      "temperature": 23.0625,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:13.058827",
+      "temperature": 23.0,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:14.151870",
+      "temperature": 23.0,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:15.215390",
+      "temperature": 23.0,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:16.283064",
+      "temperature": 23.0,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:17.350381",
+      "temperature": 23.0,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:18.412338",
+      "temperature": 23.0,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:19.479005",
+      "temperature": 23.0,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:20.545974",
+      "temperature": 23.0,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:21.625099",
+      "temperature": 23.0,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:22.704039",
+      "temperature": 23.0,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:23.785519",
+      "temperature": 23.0,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:24.848040",
+      "temperature": 23.0,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:25.916520",
+      "temperature": 22.9375,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:26.977804",
+      "temperature": 22.9375,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:28.044578",
+      "temperature": 22.9375,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:29.109515",
+      "temperature": 23.0,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:30.174782",
+      "temperature": 23.0,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:31.254171",
+      "temperature": 23.0,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:32.351572",
+      "temperature": 22.9375,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:33.413405",
+      "temperature": 22.9375,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:34.480529",
+      "temperature": 22.9375,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:35.556372",
+      "temperature": 22.9375,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:36.624930",
+      "temperature": 22.9375,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:37.703957",
+      "temperature": 22.9375,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:38.786681",
+      "temperature": 22.9375,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:39.866589",
+      "temperature": 22.9375,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:40.930562",
+      "temperature": 22.9375,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:42.022773",
+      "temperature": 22.875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:43.088150",
+      "temperature": 22.875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:44.168433",
+      "temperature": 22.875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:45.234589",
+      "temperature": 22.9375,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:46.297843",
+      "temperature": 22.9375,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:47.365260",
+      "temperature": 22.875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:48.443624",
+      "temperature": 22.875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:49.506793",
+      "temperature": 22.875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:50.575145",
+      "temperature": 22.875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:51.642269",
+      "temperature": 22.875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:52.719046",
+      "temperature": 22.875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:53.785839",
+      "temperature": 22.875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:54.880901",
+      "temperature": 22.875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:55.960857",
+      "temperature": 22.875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:57.024503",
+      "temperature": 22.875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:58.089888",
+      "temperature": 22.875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:22:59.171418",
+      "temperature": 22.875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:00.234057",
+      "temperature": 22.875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:01.302698",
+      "temperature": 22.875,
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:02.381694",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:03.460821",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:04.542495",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:05.603681",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:06.670454",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:07.749554",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:08.813082",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:09.878789",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:10.943004",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:12.010164",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:13.073791",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:14.140696",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:15.207987",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:16.302230",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:17.382141",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:18.444590",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:19.508321",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:20.576620",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:21.656440",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:22.721220",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:23.803578",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:24.880332",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:25.959929",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:27.055558",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:28.119024",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:29.185136",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:30.267255",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:31.333207",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:32.411403",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:33.475418",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:34.559336",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:35.620758",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:36.685364",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:37.766929",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:38.847399",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:39.910790",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:41.022216",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:42.100832",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:43.165306",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:44.261092",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:45.328004",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:46.404978",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:47.473877",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:48.549495",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:49.618240",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:50.682967",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:51.765654",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:52.857718",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:53.937927",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:55.000345",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:56.068808",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:57.145346",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:58.213483",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:23:59.290791",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:00.373563",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:01.453706",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:02.547109",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:03.642818",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:04.725450",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:05.805076",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:06.896974",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:07.960815",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:09.026916",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:10.094812",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:11.173399",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:12.237446",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:13.300097",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:14.367712",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:15.429135",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:16.499281",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:17.578196",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:18.656274",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:19.723621",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:20.788039",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:21.854549",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:22.917833",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:23.980287",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:25.047754",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:26.111940",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:27.191617",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:28.257344",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:29.337688",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:30.418957",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:31.498360",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:32.561966",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:33.626696",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:34.708088",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:35.768873",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:36.838916",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:37.917528",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:38.998940",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:40.065808",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:41.147023",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:42.226077",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:43.289428",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:44.366401",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:45.437688",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:46.511156",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:47.576584",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:48.657217",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:49.740651",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:50.821183",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:51.900879",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:52.960672",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:54.028063",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:55.095993",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:56.160333",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:57.238606",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:58.304439",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:24:59.382414",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:00.448025",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:01.526945",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:02.596999",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:03.673717",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:04.754576",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:05.833967",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:06.902034",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:07.974307",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:09.046651",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:10.141311",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:11.223815",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:12.299773",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:13.380476",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:14.460558",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:15.543604",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:16.619847",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:17.703871",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:18.781475",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:19.874561",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:20.951242",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:22.021123",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:23.099144",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:24.167718",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:25.242513",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:26.313165",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:27.387166",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:28.452876",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:29.524892",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:30.615267",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:31.693813",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:32.763075",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:33.869224",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:34.937670",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:36.012964",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:37.080623",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:38.159888",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:39.240384",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:40.304832",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:41.382110",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:42.448501",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:43.535062",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:44.626180",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:45.709228",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:46.788893",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:47.861845",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:48.930753",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:50.025735",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:51.106197",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:52.185760",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:53.250267",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:54.327928",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:55.410870",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:56.472471",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:57.553805",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:58.618752",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:25:59.682158",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:00.746320",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:01.812566",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:02.878186",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:03.943601",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:05.013069",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:06.091730",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:07.167554",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:08.230464",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:09.298797",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:10.364773",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:11.445842",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:12.535887",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:13.602550",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:14.667053",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:15.731653",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:16.797516",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:17.866592",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:18.931875",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:20.008505",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:21.076267",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:22.142848",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:23.207005",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:24.288150",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:25.367029",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:26.446207",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:27.541839",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:28.624245",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:29.716633",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:30.778367",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:31.848787",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:32.925951",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:33.991217",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:35.058156",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:36.135896",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:37.217089",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:38.282614",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:26:39.361548",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:12.242557",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:13.320996",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:14.403011",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:15.481755",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:16.590325",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:17.655101",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:18.721853",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:19.785115",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:20.852901",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:21.931068",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:23.010049",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:24.077757",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:25.155627",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:26.236798",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:27.300044",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:28.368475",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:29.445187",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:30.527232",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:31.605638",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:32.706027",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:33.784040",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:34.850117",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:35.943471",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:37.027006",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:38.106047",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:39.185209",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:40.265438",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:41.346901",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:42.425368",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:43.520027",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    },
+    {
+      "timestamp": "2025-10-03T14:27:44.594497",
+      "temperature": "nan",
+      "sensor": "sensor2",
+      "unit": "celsius"
+    }
+  ],
+  "last_updated": "2025-10-03T14:27:44.594924",
+  "total_readings": 300,
+  "current_temperature": "nan"
+}

@@ -29,6 +29,15 @@ function getSessionStartTs() {
   return Number(ts);
 }
 
+function getLastSavedUnit() {
+  const s = loadSession();
+  return s?.unit || "C";
+}
+
+function isTemperatureValid(temp) {
+  return temp !== 'nan' && temp !== 'off' && !isNaN(temp) && isFinite(temp);
+}
+
 // ---------- REAL sensor (ACTIVE) ----------
 
 async function getMostRecentData() {
@@ -37,37 +46,49 @@ async function getMostRecentData() {
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const j = await r.json();
     const recent = j.readings[j.readings.length - 1];
-    //console.log("Recent data from sensor 1:", recent); // Fixed: changed print to console.log
-    if (recent.temperature >= 50 && !sent){
+    const temp1john = document.getElementById("temp1");
+    
+    if (temp1john) {
+      if (isTemperatureValid(recent.temperature)) {
+        if (getLastSavedUnit() === "F") {
+          temp1john.textContent = (recent.temperature * 9/5 + 32).toFixed(2) + "°F";
+        } else {
+          temp1john.textContent = recent.temperature + "°C";
+        }
+      } else {
+        if (recent.temperature === 'off') {
+          temp1john.textContent = "Device Unplugged";
+        } else if (recent.temperature === 'nan') {
+          temp1john.textContent = "No data available";
+        } else {
+          temp1john.textContent = "No data available";
+        }
+    }
+  }
+    
+    // nan - no data available
+    // 8fc - device unplugged
+    //console.log("Recent data from sensor 1:", recent);
+    
+    // Only send warnings for valid temperature values
+    if (isTemperatureValid(recent.temperature)) {
+      if (recent.temperature >= 50 && !sent) {
         send_warning("Warning: High temperature detected from Sensor 1: " + recent.temperature + "°C");
         console.log("Warning: High temperature detected from Sensor 1: " + recent.temperature + "°C");
-    }
-    else if (recent.temperature <= 10 && !sent){
+        sent = true;
+      } else if (recent.temperature <= 10 && !sent) {
         send_warning("Warning: Low temperature detected from Sensor 1: " + recent.temperature + "°C");
         console.log("Warning: Low temperature detected from Sensor 1: " + recent.temperature + "°C");
+        sent = true;
+      }
     }
-    else{
 
-    }
-
-    return recent.temperature; // °C
+    return recent.temperature; // °C or 'nan'
   } catch (err) {
     console.error("Sensor1 read failed:", err.message);
     return null;
   }
 }
-
-
-// ---------- SIMULATION (COMMENTED OUT) ----------
-/*
-function simCelsiusAt(t) {
-  const base  = 27.5 + 4.6 * Math.sin((t / 28) * 2 * Math.PI);
-  const noise = (Math.random() - 0.5) * 1.4;
-  let v = base + noise;
-  v = Math.max(10, Math.min(50, v)); // Updated range
-  return Math.round(v * 100) / 100;
-}
-*/
 
 // ---------- unit helpers ----------
 const cToF = c => (c * 9/5) + 32;
@@ -86,16 +107,62 @@ function applyYAxisForUnit(chart, unit) {
     y.ticks.stepSize = 5; // Adjusted step size for larger range
   }
 }
+
 function setUnit(chart, data, nextUnit) {
   const ds = data.datasets[0];
   if (nextUnit === "F") {
-    ds.data = ds.data.map(p => ({ x: p.x, y: cToF(p.y) }));
+    ds.data = ds.data.map(p => ({ 
+      x: p.x, 
+      y: isTemperatureValid(p.y) ? cToF(p.y) : p.y 
+    }));
     ds.label = "Temperature (°F)";
   } else {
-    ds.data = ds.data.map(p => ({ x: p.x, y: fToC(p.y) }));
+    ds.data = ds.data.map(p => ({ 
+      x: p.x, 
+      y: isTemperatureValid(p.y) ? fToC(p.y) : p.y 
+    }));
     ds.label = "Temperature (°C)";
   }
   applyYAxisForUnit(chart, nextUnit);
+}
+
+async function toggleUnit() {
+    try {
+        // Always set power to 1, ignore current state
+        const powerData = { power: 1 , units1: "celsius", units2: "celsius"};
+        
+        console.log('Setting power to ON (1)');
+        
+        // Update the JSON file on the server
+        const updateResponse = await fetch('/update-power', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(powerData)
+        });
+        const userExists = await checkUserExists(email);
+        if( userExists){
+        if (updateResponse.ok) {
+            const result = await updateResponse.json();
+            console.log(`Power set to ON - ${result.message}`);
+            
+            // Update button text
+            const powerBtn = document.getElementById("power");
+
+            if (powerBtn) {
+                powerBtn.textContent = `Power: ON`;
+            }
+        } else {
+            const errorText = await updateResponse.text();
+            console.error('Failed to update power state:', updateResponse.status, errorText);
+        }
+    }   else{
+        alert('Please enter your information and save before setting power.');
+    }
+    
+        
+    } catch (error) {
+        console.error('Error setting power:', error);
+    }
 }
 
 // ---------- ticks ----------
@@ -121,7 +188,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     for (let i = 0; i < len; i++) {
       const x = first + i;
       const yC = saved.pointsCelsius[i];
-      dsData.push({ x, y: unit === "F" ? cToF(yC) : yC });
+      dsData.push({ 
+        x, 
+        y: (unit === "F" && isTemperatureValid(yC)) ? cToF(yC) : yC 
+      });
     }
   }
 
@@ -130,7 +200,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       label: unit === "F" ? "Temperature (°F)" : "Temperature (°C)",
       data: dsData,
       parsing: false,
-      borderColor: "rgba(255,99,132,1)",
+      borderColor: "rgba(99, 169, 255, 1)",
       backgroundColor: "rgba(255,99,132,0.1)",
       pointRadius: 3,
       tension: 0.15,
@@ -200,13 +270,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     for (let t = lastT + 1; t <= nowT; t++) {
       const c = await getMostRecentData();
       if (c == null) continue;
-      const y = unit === "F" ? cToF(c) : c;
+      const y = (unit === "F" && isTemperatureValid(c)) ? cToF(c) : c;
       data.datasets[0].data.push({ x: t, y });
     }
     lastT = nowT;
     updateWindowAndTicks();
     myChart.update("none");
-    const storeC = data.datasets[0].data.map(p => unit === "F" ? fToC(p.y) : p.y);
+    const storeC = data.datasets[0].data.map(p => 
+      (unit === "F" && isTemperatureValid(p.y)) ? fToC(p.y) : p.y
+    );
     saveSession(storeC, lastT, unit);
   }
 
@@ -220,7 +292,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const c = await getMostRecentData(); 
       if (c == null) continue;
 
-      const y = unit === "F" ? cToF(c) : c;
+      const y = (unit === "F" && isTemperatureValid(c)) ? cToF(c) : c;
       data.datasets[0].data.push({ x: t, y });
     }
     lastT = targetT;
@@ -228,7 +300,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     updateWindowAndTicks();
     myChart.update("none");
 
-    const storeC = data.datasets[0].data.map(p => unit === "F" ? fToC(p.y) : p.y);
+    const storeC = data.datasets[0].data.map(p => 
+      (unit === "F" && isTemperatureValid(p.y)) ? fToC(p.y) : p.y
+    );
     saveSession(storeC, lastT, unit);
   }, 500);
 
@@ -242,7 +316,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       btn.innerText = unit === "C" ? "Switch to °F" : "Switch to °C";
       updateWindowAndTicks();
       myChart.update("none");
-      const storeC = data.datasets[0].data.map(p => unit === "F" ? fToC(p.y) : p.y);
+      const storeC = data.datasets[0].data.map(p => 
+        (unit === "F" && isTemperatureValid(p.y)) ? fToC(p.y) : p.y
+      );
       saveSession(storeC, lastT, unit);
     });
   }
@@ -274,3 +350,73 @@ async function send_warning(message) {
         return false;
     }
 }
+
+function toggleUnit() {
+    // Toggle the unit
+    unit = (unit === "C") ? "F" : "C";
+    
+    // Update the chart display
+    setUnit(myChart, data, unit);
+    
+    // Update the button text
+    const btn = document.getElementById("toggleUnit");
+    if (btn) {
+        btn.innerText = unit === "C" ? "Switch to °F" : "Switch to °C";
+    }
+    
+    // Update chart ticks and refresh
+    updateWindowAndTicks();
+    myChart.update("none");
+    
+    // Convert data for storage
+    const storeC = data.datasets[0].data.map(p => 
+        (unit === "F" && isTemperatureValid(p.y)) ? fToC(p.y) : p.y
+    );
+    
+    // Save to session storage
+    saveSession(storeC, lastT, unit);
+    
+    // Update power.json with the new unit setting
+    updatePowerJsonUnit(unit);
+}
+
+function updatePowerJsonUnit(newUnit) {
+    // Convert to the format used in power.json
+    const unitValue = newUnit === "C" ? "celsius" : "fahrenheit";
+    const powerData = {
+        "unit1": unitValue  // This will update unit1 in your power.json
+    };
+    
+    // Use your existing server endpoint
+    fetch('/update-power-json', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(powerData)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Failed to update unit preference');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Unit preference saved to power.json:', data);
+    })
+    .catch(error => {
+        console.error('Error saving unit preference:', error);
+    });
+}
+
+// Initialize the button
+document.addEventListener('DOMContentLoaded', function() {
+    const btn = document.getElementById("toggleUnit");
+    if (btn) {
+        // Set initial button text
+        btn.innerText = unit === "C" ? "Switch to °F" : "Switch to °C";
+        
+        // Add click event listener
+        btn.addEventListener("click", toggleUnit);
+    }
+});
